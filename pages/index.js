@@ -3,6 +3,7 @@ import { Box, Flex, VStack, Image, Heading } from "@chakra-ui/react";
 import Hero from "../components/landing/Hero";
 import Img from "../components/landing/Img";
 import Second from "../components/landing/Second";
+import Third from "../components/landing/third";
 import NavBar from "../components/shared/NavBar";
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Hero />
       <Img />
       <Second />
+      <Third />
     </Flex>
   );
 }

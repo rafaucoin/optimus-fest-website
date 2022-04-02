@@ -10,8 +10,8 @@ function Img() {
       {md && (
         <Image
           position="absolute"
-          width="90%"
-          height="88vh"
+          width="88%"
+          height="100vh"
           top="50vh"
           right="5%"
           src="/people.png"

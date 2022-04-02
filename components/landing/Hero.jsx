@@ -11,8 +11,8 @@ function Hero() {
     >
       <Box
         display="flex"
-        width={{ base: "100%", md: "80%" }}
-        height={{ base: "100vh", md: "95vh" }}
+        width={{ base: "100%", md: "100%" }}
+        height={{ base: "100vh", md: "100vh" }}
       >
         <svg
           width="100%"
@@ -216,8 +216,8 @@ function Hero() {
         <Heading
           variant="title"
           mt={{ base: 0, sm: 8 }}
-          fontSize={{ base: 15, md: 24 }}
-          letterSpacing={{ base: 2, md: 2 }}
+          fontSize={{ base: 15, md: 20 }}
+          letterSpacing={{ base: 2, md: 2.5 }}
           textTransform="uppercase"
           display="flex"
           alignSelf={{ base: "center", md: "flex-start" }}
