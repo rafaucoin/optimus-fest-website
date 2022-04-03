@@ -14,6 +14,7 @@ function Img() {
           height="100vh"
           top="50vh"
           right="5%"
+          userSelect="none"
           src="/people.png"
         />
       )}
@@ -21,9 +22,8 @@ function Img() {
         <Flex w="100%" h="10%" position="relative">
           <Image
             position="absolute"
-            width="80%"
-            height="88vh"
-            top="-120%"
+            width="70%"
+            top="-100%"
             right="0%"
             src="/peoplemd.png"
           />

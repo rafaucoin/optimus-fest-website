@@ -20,16 +20,18 @@ function Third() {
       width="100%"
       alignItems="center"
       justifyContent="space-between"
-      pl={{ base: 5, md: 18, lg: 20 }}
+      pl={{ base: 5, md: 10 }}
+      pr={{ base: 5, md: 10 }}
     >
       <Flex
         height="80%"
-        width="40%"
+        width={{ base: "100%", md: "40%" }}
         flexDirection="column"
         justifyContent="flex-start"
         gap="5%"
+        pt={{ base: "10%", md: 0 }}
       >
-        <Heading letterSpacing={"wide"} fontSize={{ base: "2xl", md: "5xl" }}>
+        <Heading letterSpacing={"wide"} fontSize={{ base: "3xl", md: "5xl" }}>
           A worthy experience, want to know why?{" "}
         </Heading>
         <Text letterSpacing={1} fontSize={{ base: "md", md: "xl" }}>
@@ -39,12 +41,11 @@ function Third() {
       </Flex>
       <Flex
         flexDirection="column"
-        width="60%"
-        height="90%"
+        width={{ base: "100%", md: "50%" }}
         justifyContent="flex-start"
         alignItems="flex-end"
       >
-        <HStack width="80%">
+        <HStack width={{ base: "100%", md: "80%" }}>
           <IoPeopleOutline size={190} color="#EE1A77" />
           <VStack>
             <Heading
@@ -60,7 +61,7 @@ function Third() {
             </Text>
           </VStack>
         </HStack>
-        <HStack width="80%" justifyContent="flex-end">
+        <HStack width={{ base: "100%", md: "80%" }} justifyContent="flex-end">
           <HiOutlineMicrophone size={180} color="#EE1A77" />
 
           <VStack>
@@ -77,7 +78,7 @@ function Third() {
             </Text>
           </VStack>
         </HStack>
-        <HStack width="80%">
+        <HStack width={{ base: "100%", md: "80%" }}>
           <BsStars size={190} color="#EE1A77" />
           <VStack gap={2}>
             <Heading

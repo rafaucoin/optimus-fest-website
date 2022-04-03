@@ -50,6 +50,12 @@ const theme = extendTheme({
         color: "white",
       },
     },
+    Input: {
+      baseStyle: {
+        fontFamily: "Play",
+        _placeholder: { fontFamily: "Play", color: "gray.500" },
+      },
+    },
     Heading: {
       baseStyle: {
         fontFamily: "Play",
@@ -59,8 +65,10 @@ const theme = extendTheme({
       variants: {
         countdown: {
           fontFamily: "VCR",
-          color: "#00FF75",
-          fontSize: 100,
+          color: "#B5E8BAB2",
+          textTransform: "uppercase",
+          fontSize: 30,
+          fontWeight: "normal",
         },
         squid: {
           fontFamily: "GAME",

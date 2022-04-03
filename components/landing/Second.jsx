@@ -3,17 +3,19 @@ import { BsArrowRight } from "react-icons/bs";
 function Second() {
   return (
     <Flex
+      id="about"
       flexDirection={{ base: "column", md: "row" }}
       height="100vh"
       width="100%"
-      mt={{ base: "35vh", md: "40vh" }}
+      mt={{ base: "35vh", sm: "10vh", md: "40vh" }}
       alignItems="center"
-      justifyContent="space-between"
-      pl={{ base: 5, md: 18, lg: 20 }}
+      justifyContent={{ base: "", md: "space-between" }}
+      pl={{ base: 5, md: 10 }}
+      pr={{ base: 5, md: 10 }}
     >
       <Flex
-        height="100%"
-        width="43%"
+        height={{ base: "80%", md: "100%" }}
+        width={{ base: "100%", md: "43%" }}
         flexDirection="column"
         justifyContent="center"
         gap="5%"
@@ -29,7 +31,7 @@ function Second() {
           sed. Leo amet sollicitudin semper purus quis posuere ornare.
         </Text>
         <Button
-          width="50%"
+          width={{ base: "100%", md: "50%" }}
           px={10}
           py={6}
           rightIcon={<BsArrowRight />}
@@ -40,12 +42,17 @@ function Second() {
       </Flex>
       <Flex
         position="relative"
-        width="50%"
-        height="70%"
+        width={{ base: "100%", md: "50%" }}
+        height={{ base: "60%", md: "70%" }}
         justifyContent="flex-end"
       >
         <Image borderRadius="lg" width="100%" height="100%" src="/second.png" />
-        <Box position="absolute" right="80%" top="90%">
+        <Box
+          display={{ base: "none", sm: "flex" }}
+          position="absolute"
+          right="80%"
+          top="90%"
+        >
           <svg
             width="100"
             height="100"
@@ -56,7 +63,12 @@ function Second() {
             <circle cx="50" cy="50" r="46" stroke="white" stroke-width="8" />
           </svg>
         </Box>
-        <Box position="absolute" right="30%" top="95%">
+        <Box
+          display={{ base: "none", sm: "flex" }}
+          position="absolute"
+          right="30%"
+          top="95%"
+        >
           <svg
             width="64"
             height="64"
@@ -74,7 +86,12 @@ function Second() {
             />
           </svg>
         </Box>
-        <Box position="absolute" right="5%" top="95%">
+        <Box
+          display={{ base: "none", sm: "flex" }}
+          position="absolute"
+          right="5%"
+          top="95%"
+        >
           <svg
             width="42"
             height="36"
