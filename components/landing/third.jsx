@@ -18,17 +18,18 @@ function Third() {
       flexDirection={{ base: "column", md: "row" }}
       height="100vh"
       width="100%"
-      alignItems="center"
+      // alignItems="center"
       justifyContent="space-between"
       pl={{ base: 5, md: 10 }}
       pr={{ base: 5, md: 10 }}
     >
       <Flex
-        height="80%"
+        height="100%"
         width={{ base: "100%", md: "40%" }}
         flexDirection="column"
         justifyContent="flex-start"
         gap="5%"
+        mt={10}
         pt={{ base: "10%", md: 0 }}
       >
         <Heading letterSpacing={"wide"} fontSize={{ base: "3xl", md: "5xl" }}>

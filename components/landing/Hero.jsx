@@ -5,15 +5,15 @@ function Hero() {
   return (
     <Flex
       id="Home"
-      flexDirection={{ base: "column-reverse", md: "row" }}
+      flexDirection={{ base: "column-reverse", lg: "row" }}
       width="100%"
       height="100vh"
-      justifyContent={{ base: "", md: "space-between" }}
+      justifyContent={{ base: "", lg: "space-between" }}
     >
       <Box
         display="flex"
-        width={{ base: "100%", sm: "70%", md: "100%" }}
-        height={{ base: "100vh", sm: "70%", md: "100vh" }}
+        width={{ base: "100%", sm: "70%", lg: "100%" }}
+        height={{ base: "100vh", sm: "70%", lg: "100vh" }}
       >
         <svg
           width="100%"
@@ -195,20 +195,20 @@ function Hero() {
       <Box
         display="flex"
         flexDirection="column"
-        width={{ base: "100%", md: "100%" }}
-        height={{ base: "30vh", md: "90vh" }}
+        width={{ base: "100%", lg: "100%" }}
+        height={{ base: "30vh", lg: "90vh" }}
         justifyContent="flex-start"
         alignItems="center"
         pr={{ base: 5, sm: 5 }}
-        pt={{ base: 10, md: 20 }}
-        pl={{ base: 5, md: 10 }}
+        pt={{ base: 10, lg: 20 }}
+        pl={{ base: 5, lg: 10 }}
       >
         <Box
           display="flex"
-          width={{ base: "100%", sm: "90%", md: "82%", lg: "90%" }}
+          width={{ base: "100%", sm: "90%", lg: "82%", lg: "90%" }}
           justifyContent={{ base: "flex-start", sm: "center" }}
-          height={{ base: "100%", sm: "50%", md: "17%", lg: "20%" }}
-          alignSelf={{ base: "flex-start" }}
+          height={{ base: "100%", sm: "50%", lg: "17%", lg: "20%" }}
+          alignSelf={{ base: "flex-start", sm: "center", lg: "flex-start" }}
           pr={{ base: 5, sm: 0 }}
           pl={{ base: 5, sm: 0 }}
         >
@@ -217,20 +217,19 @@ function Hero() {
         <Heading
           variant="title"
           mt={{ base: 0, sm: 8 }}
-          fontSize={{ base: 15, md: 20, lg: 23 }}
-          letterSpacing={{ base: 2, md: 1 }}
+          fontSize={{ base: 15, lg: "xl" }}
+          letterSpacing={{ base: 2, lg: 3 }}
           textTransform="uppercase"
           display="flex"
-          alignSelf={{ base: "center", md: "flex-start" }}
+          alignSelf={{ base: "center", lg: "flex-start" }}
         >
           May 12-15, 2022 * Algeriaventure
           <Heading
             variant="title"
-            fontSize={{ base: 15, md: 20, lg: 23 }}
-            letterSpacing={{ base: 2, md: 1 }}
+            fontSize={{ sm: 15, lg: "xl" }}
+            letterSpacing={{ base: 2, lg: 3 }}
             textTransform="uppercase"
             display={{ base: "none", sm: "flex" }}
-            alignSelf={{ base: "center", md: "flex-start" }}
           >
             , Dely Brahim
           </Heading>

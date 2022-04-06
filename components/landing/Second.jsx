@@ -4,26 +4,70 @@ function Second() {
   return (
     <Flex
       id="about"
-      flexDirection={{ base: "column", md: "row" }}
+      flexDirection={{ base: "column", lg: "row" }}
       height="100vh"
       width="100%"
-      mt={{ base: "35vh", sm: "10vh", md: "40vh" }}
+      mt={{ base: "50vw", lg: "40vh" }}
       alignItems="center"
-      justifyContent={{ base: "", md: "space-between" }}
-      pl={{ base: 5, md: 10 }}
-      pr={{ base: 5, md: 10 }}
+      justifyContent={{ base: "", lg: "space-between" }}
+      pl={{ base: 5, lg: 10 }}
+      pr={{ base: 5, lg: 10 }}
+      position="relative"
     >
+      <Box right="0" top="-50px" position={"absolute"} zIndex={-10}>
+        <svg
+          width="600"
+          height="317"
+          viewBox="0 0 600 317"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g opacity="0.04">
+            <circle
+              cx="71.2294"
+              cy="158.287"
+              r="66.2294"
+              transform="rotate(-90 71.2294 158.287)"
+              stroke="white"
+              stroke-width="10"
+            />
+            <circle
+              cx="575.771"
+              cy="158.287"
+              r="66.2294"
+              transform="rotate(-90 575.771 158.287)"
+              stroke="white"
+              stroke-width="10"
+            />
+            <path
+              d="M275.96 286.708L53.5291 158.287L275.96 29.8667V286.708Z"
+              stroke="white"
+              stroke-width="10"
+            />
+            <rect
+              x="319.596"
+              y="289.81"
+              width="259.089"
+              height="259.089"
+              transform="rotate(-90 319.596 289.81)"
+              stroke="white"
+              stroke-width="10"
+            />
+          </g>
+        </svg>
+      </Box>
+
       <Flex
-        height={{ base: "80%", md: "100%" }}
-        width={{ base: "100%", md: "43%" }}
+        height={{ base: "80%", lg: "100%" }}
+        width={{ base: "100%", lg: "43%" }}
         flexDirection="column"
         justifyContent="center"
         gap="5%"
       >
-        <Heading letterSpacing={"wide"} fontSize={{ base: "2xl", md: "5xl" }}>
+        <Heading letterSpacing={"wide"} fontSize={{ base: "2xl", lg: "5xl" }}>
           Optimus Fest, more than just a competition
         </Heading>
-        <Text letterSpacing={1} fontSize={{ base: "md", md: "xl" }}>
+        <Text letterSpacing={1} fontSize={{ base: "lg", lg: "xl" }}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis
           pulvinar orci ultricies in hac non mi bibendum duis. Luctus vitae
           ipsum nulla tortor tempus gravida. Amet potenti mi eleifend pulvinar
@@ -31,7 +75,7 @@ function Second() {
           sed. Leo amet sollicitudin semper purus quis posuere ornare.
         </Text>
         <Button
-          width={{ base: "100%", md: "50%" }}
+          width={{ base: "100%", lg: "50%" }}
           px={10}
           py={6}
           rightIcon={<BsArrowRight />}
@@ -42,8 +86,8 @@ function Second() {
       </Flex>
       <Flex
         position="relative"
-        width={{ base: "100%", md: "50%" }}
-        height={{ base: "60%", md: "70%" }}
+        width={{ base: "100%", lg: "50%" }}
+        height={{ base: "60%", lg: "70%" }}
         justifyContent="flex-end"
       >
         <Image borderRadius="lg" width="100%" height="100%" src="/second.png" />

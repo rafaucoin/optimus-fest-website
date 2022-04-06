@@ -46,22 +46,49 @@ export default function Home() {
           position="relative"
           boxShadow="dark-lg"
         >
-          <VStack height="95%" width={{ base: "100%", md: "70%" }}>
+          <VStack
+            position="relative"
+            height="95%"
+            width={{ base: "100%", md: "70%" }}
+          >
             <Heading color="#B5E8BAB2">* 일 수 *</Heading>
             <Heading variant="countdown">Number of days</Heading>
+            <Flex
+              position="absolute"
+              top="38%"
+              marginTop={0}
+              width="350px"
+              justifyContent="space-around"
+            >
+              <Element top={0} />
+              <Element top={0} />
+              <Element top={0} />
+            </Flex>
             <Heading
-              pl={7}
+              pl="13%"
               fontFamily="VCR"
               color="#B5E8BAB2"
-              fontSize={{ base: "150px", md: "180px" }}
+              fontSize={"175px"}
               letterSpacing={9}
               display="flex"
+              mt={0}
             >
-              064
-              <Heading mt="35%" color="#B5E8BAB2">
+              000
+              <Heading mt="37%" color="#B5E8BAB2">
                 일
               </Heading>
             </Heading>
+            <Flex
+              position="absolute"
+              top="92%"
+              marginTop={0}
+              width="350px"
+              justifyContent="space-around"
+            >
+              <Element />
+              <Element />
+              <Element />
+            </Flex>
           </VStack>
         </Flex>
         <Flex
@@ -98,5 +125,31 @@ export default function Home() {
       </Flex>
       <Fifth />
     </Flex>
+  );
+}
+function Element({ top }) {
+  const basicBoxStyles = {
+    boxShadow: "0px 13px 20px 10px  black",
+  };
+  const basicBoxStyless = {
+    boxShadow: "0px -13px 20px 10px black",
+  };
+  return (
+    <Box sx={top == 0 ? basicBoxStyles : basicBoxStyless}>
+      <svg
+        width="93"
+        height="6"
+        viewBox="0 0 93 6"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          width="92.8125"
+          height="5.16129"
+          fill="#B5E8BA"
+          fill-opacity="0.7"
+        />
+      </svg>
+    </Box>
   );
 }
