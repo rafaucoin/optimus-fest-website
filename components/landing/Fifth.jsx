@@ -7,7 +7,7 @@ import {
   Image,
   Text,
 } from "@chakra-ui/react";
-import { FiSquare } from "react-icons/fi";
+// import { FiSquare } from "react-icons/fi";
 import { BsTriangleFill } from "react-icons/bs";
 import { FaCircle } from "react-icons/fa";
 

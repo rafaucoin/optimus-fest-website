@@ -13,72 +13,129 @@ import {
 export default function Fourth() {
   return (
     <Flex
-      flexDirection={{ base: "column", md: "row" }}
-      height="100vh"
-      width="100%"
-      alignItems="center"
-      pl={{ base: 5, md: 10 }}
-      pr={{ base: 5, md: 10 }}
-      bgColor="white"
-      gap={{ base: 0, md: 10 }}
-      pt={{ base: "20%", md: 0 }}
-    >
-      <Flex
-        height="50%"
-        border="13px solid"
-        borderColor="#222222"
-        bgColor="#111111"
-        justifyContent="center"
-        width={{ base: "100%", md: "50%" }}
-        position="relative"
-        boxShadow="dark-lg"
+        flexDirection={{ base: "column", md: "row" }}
+        height="100vh"
+        width="100%"
+        alignItems="center"
+        pl={{ base: 5, md: 18, lg: 20 }}
+        pr={{ base: 5, md: 18, lg: 20 }}
+        bgColor="white"
+        gap={{ base: 10, md: 10 }}
+        pt={{ base: "20%", md: 0 }}
       >
-        <VStack width={{ base: "100%", md: "70%" }}>
-          <Heading color="#B5E8BAB2">* 일 수 *</Heading>
-          <Heading variant="countdown">Number of days</Heading>
-          <Heading
-            fontFamily="VCR"
-            color="#B5E8BAB2"
-            fontSize={{ base: "150px", md: "200px" }}
-            letterSpacing={9}
+        <Flex
+          height={{ base: "45%", md: "50%" }}
+          border="13px solid"
+          borderColor="#222222"
+          bgColor="#111111"
+          justifyContent="center"
+          width={{ base: "100%", md: "50%" }}
+          alignItems="flex-end"
+          position="relative"
+          boxShadow="dark-lg"
+        >
+          <VStack
+            position="relative"
+            height="95%"
+            width={{ base: "100%", md: "70%" }}
           >
-            064
+            <Heading color="#B5E8BAB2">* 일 수 *</Heading>
+            <Heading variant="countdown">Number of days</Heading>
+            <Flex
+              position="absolute"
+              top="35%"
+              marginTop={0}
+              width="360px"
+              justifyContent="space-around"
+            >
+              <Element top={0} />
+              <Element top={0} />
+              <Element top={0} />
+            </Flex>
+            <Heading
+              pl="13%"
+              fontFamily="VCR"
+              color="#B5E8BAB2"
+              fontSize={"175px"}
+              letterSpacing={9}
+              display="flex"
+              mt={0}
+            >
+              000
+              <Heading mt="37%" color="#B5E8BAB2">
+                일
+              </Heading>
+            </Heading>
+            <Flex
+              position="absolute"
+              top="78%"
+              marginTop={0}
+              width="360px"
+              justifyContent="space-around"
+            >
+              <Element />
+              <Element />
+              <Element />
+            </Flex>
+          </VStack>
+        </Flex>
+        <Flex
+          height="50%"
+          width={{ base: "100%", md: "50%" }}
+          justifyContent={{ base: "", md: "space-around" }}
+          gap={{ base: 5, md: 0 }}
+          flexDirection="column"
+        >
+          <Heading
+            color="black"
+            fontWeight="extrabold"
+            letterSpacing={""}
+            fontSize={{ base: "3xl", md: "5xl" }}
+            LineHeight="80px"
+          >
+            Tick Tock – Clock is ticking, don’t miss this!
           </Heading>
-        </VStack>
-        <Heading mt="35vh" color="#B5E8BAB2">
-          일
-        </Heading>
+          <Text
+            fontWeight="semi-bold"
+            color="black"
+            fontSize={{ base: "md", md: "xl" }}
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in in at
+            donec bibendum cras. Vitae diam mauris nisi lectus dis.
+          </Text>
+          <HStack width={{ base: "100%", md: "70%" }}>
+            <Input p={6} placeholder="Enter your email" />
+            <Button px={10} py={6} variant="register">
+              Subscribe
+            </Button>
+          </HStack>
+        </Flex>
       </Flex>
-      <Flex
-        height="50%"
-        width={{ base: "100%", md: "50%" }}
-        justifyContent="space-around"
-        flexDirection="column"
+  );
+}
+function Element({ top }) {
+  const basicBoxStyles = {
+    boxShadow: "0px 13px 20px 10px  black",
+  };
+  const basicBoxStyless = {
+    boxShadow: "0px -13px 20px 10px black",
+  };
+  return (
+    <Box sx={top == 0 ? basicBoxStyles : basicBoxStyless}>
+      <svg
+        width="93"
+        height="6"
+        viewBox="0 0 93 6"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <Heading
-          color="black"
-          fontWeight="extrabold"
-          letterSpacing={""}
-          fontSize={{ base: "5xl", md: "5xl" }}
-          LineHeight="80px"
-        >
-          Tick Tock – Clock is ticking, don’t miss this!
-        </Heading>
-        <Text
-          fontWeight="semi-bold"
-          color="black"
-          fontSize={{ base: "md", md: "xl" }}
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in in at
-          donec bibendum cras. Vitae diam mauris nisi lectus dis.
-        </Text>
-        <HStack width={{ base: "100%", md: "70%" }}>
-          <Input p={6} placeholder="Enter your email" />
-          <Button px={10} py={6} variant="register">
-            Subscribe
-          </Button>
-        </HStack>
-      </Flex>
-    </Flex>
+        <rect
+          width="92.8125"
+          height="5.16129"
+          fill="#B5E8BA"
+          fill-opacity="0.7"
+        />
+      </svg>
+    </Box>
   );
 }
