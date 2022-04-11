@@ -5,6 +5,7 @@ import Text from "../styles/globals.css";
 import Layout from "../components/shared/Layout";
 function MyApp({ Component, pageProps }) {
   return (
+    
     <ChakraProvider theme={theme}>
       <ColorModeScript initialColorMode={theme.config.initialColorMode} />
       <Fonts />
